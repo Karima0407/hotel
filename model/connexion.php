@@ -1,5 +1,5 @@
 <?php
-require_once "inc/database.php";
+require_once "../inc/database.php";
 if(isset($_POST['submit'])){
     $email=htmlspecialchars($_POST['email']);
     $password=htmlspecialchars($_POST['password']);
@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
             if(password_verify($password,$userInfo['password'])){
                 // si l'utilisateur est un admin 
                 if($userInfo['role']=="admin"){
-                    header("Location:admin/admin.php");
+                    header("Location: http://localhost/hotel/admin/admin.php");
                 }else{
                    header("Location:user_home.php");
                 }

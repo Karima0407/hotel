@@ -7,3 +7,6 @@ body{
     display: flex !important;
     justify-content: flex-end;
 }
+i{
+    font-size: xx-large;
+}
