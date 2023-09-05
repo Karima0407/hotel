@@ -6,7 +6,14 @@ body{
 .collapse{
     display: flex !important;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 i{
     font-size: xx-large;
+}
+.img_room{
+    height: 200px;
+}
+.img_room img{
+    height: 100%;
 }
